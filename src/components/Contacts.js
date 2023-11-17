@@ -22,7 +22,7 @@ function Contacts({ contacts, currentUser,changeChat }) {
                     <div className='mainContact'>
                         <div className='brand'>
                             <img src={Logo} alt="logo" />
-                            <h3>Secret Chats</h3>
+                            <h3 className="hide">Secret Chats</h3>
                         </div>
                         <div className='contacts'>
                             {
@@ -33,7 +33,7 @@ function Contacts({ contacts, currentUser,changeChat }) {
                                             <div className="avatar2">
                                                 <img src={`data:image/svg+xml;base64,${contact.avatarImage}`} alt="avatar2" />
                                             </div>
-                                            <div className="username">
+                                            <div className="username hide">
                                                 <h3>{contact.username}</h3>
                                             </div>
                                         </div>
@@ -45,7 +45,7 @@ function Contacts({ contacts, currentUser,changeChat }) {
                             <div className="avatar2">
                                 <img src={`data:image/svg+xml;base64,${currentUserImage}`} alt="avatar2" />
                             </div>
-                            <div className="usernamex">
+                            <div className="usernamex hide">
                                 <h2>{currentUserName}</h2>
                             </div>
                         </div>
