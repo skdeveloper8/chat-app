@@ -28,7 +28,7 @@ function Chat() {
   }, [])
   useEffect(()=>{
     if(currentUser){
-      socket.current=io("http://localhost:5000");
+      socket.current=io("https://chat-app-vkm7.onrender.com");
       socket.current.emit("add-user",currentUser._id);
     }
   },[currentUser])
